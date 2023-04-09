@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(29,90,253);
+    background: linear-gradient(180deg, rgba(29,90,253,1) 0%, rgba(137,9,205,1) 72%);
+}
+
+.perfil {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: white;
+}
+
+.perfil h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 10px;
+    margin-top: 20px;
+}
+
+.perfil h2 {
+    margin-top: 10px;
+}
+
+.perfil img {
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: brightProfile 3s infinite;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.redes-sociais img {
+    width: 50px;
+}
+
+.links-list li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(85, 16, 234);
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+    animation: brightBanner 3s infinite;
+}
+
+.links-list li a span {
+    display: block;
+    font-size: 15px;
+    color: rgb(160, 157, 157);
+}
+
+@keyframes brightProfile {
+    0% {
+        box-shadow: 0 0 10px white;
+    }
+    50% {
+        box-shadow: 0 0 40px white;
+    }
+    100% {
+        box-shadow: 0 0 10px white;
+    }
+}
+
+@keyframes brightBanner {
+    0% {
+        box-shadow: 0 0 5px white;
+    }
+    50% {
+        box-shadow: 0 0 20px white;
+    }
+    100% {
+        box-shadow: 0 0 5px white;
+    }
+}
